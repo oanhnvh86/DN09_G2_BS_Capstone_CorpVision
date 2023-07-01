@@ -2,6 +2,7 @@
 
 :root {
     --primary-color: #009f4d;
+    --secondary-color: #fff;
     --title-color: #7e7d7d;
     --heading-color: #213364;
     --font-color: #666;
@@ -47,7 +48,46 @@ html, body{
 /* !ANIMATION */
 
 /* !HEADER */
+.pj_header {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+.pj_header .navbar{
+    justify-content: space-between;
+}
+.pj_header .navbar-brand p:first-of-type{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    
+    margin-bottom: 0;
+}
 
+.pj_header .navbar-brand p:last-of-type{
+font-size: 14px;
+font-weight: 600;
+padding-left: 46px;
+
+}
+
+.pj_header .navbar-brand i{
+    color: var(--primary-color);
+}
+
+
+.pj_header .navbar-nav {
+    margin: auto 0 !important;
+}
+.pj_header .navbar-nav .nav-link{
+    color: var(--secondary-color);
+}
+
+.pj_header .pj_header__mode i:first-of-type{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--primary-color);;
+    font-size: 14px;
+}
 
 /* !CAROUSEL */
 
