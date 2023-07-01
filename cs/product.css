@@ -1,0 +1,18 @@
+.pj_Product{
+    background-color:  var(--bg-grey);
+
+}
+.pj_Product__border{
+    background-color: var(--bg-white);
+    text-align: center;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
+
+    transition: all .5s;
+}
+
+.pj_Product__border:hover{
+    transform: translateY(-5px);
+    box-shadow: rgba(46, 41, 51, 0.08) 0px 2px 4px, rgba(71, 63, 79, 0.16) 0px 5px 10px;;
+}

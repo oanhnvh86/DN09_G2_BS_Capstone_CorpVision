@@ -1,0 +1,45 @@
+
+:root {
+    --primary-color: #009f4d;
+    --secondary-color: #fff;
+    --title-color: #7e7d7d;
+    --heading-color: #213364;
+    --font-color: #666;
+    --newstitle-color:#999;
+    --footer-color:#97a1a9;
+    --bg-white: #fff;
+    --bg-grey: #f7f7f7;
+    --bg-footer: #151421;
+    
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    font-family: 'Jost', sans-serif;
+    font-size: 17px;
+    line-height: 27px;
+    color: #666;;
+}
+
+.pj_Section{
+    padding:70px 0;
+}
+
+.pj_Title p {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #7e7d7d;
+    
+}
+.pj_Title h2 {
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 700;
+}
