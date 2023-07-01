@@ -93,7 +93,27 @@ padding-left: 46px;
 
 
 /* !ABOUT US */
+.pj_AboutUs ul {
+    list-style: none;
+}
+.pj_AboutUs ul i{
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #009f4d;
+}
+.pj_AboutUs ul li {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+}
 
+.pj_AboutUs img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
 
 /* !PRODUCT */
 
