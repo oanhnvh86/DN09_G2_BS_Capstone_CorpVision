@@ -69,9 +69,9 @@ header{
     border-bottom: 1px solid rgba(231, 231, 231, 0.18);
 }
 .pj_header {
-    color: var(--secondary-color);
-    /* border-bottom: 2px solid var(--secondary-color);     */
+    color: var(--secondary-color);  
 }
+
 .pj_header .navbar{
     justify-content: space-between;
 }
@@ -102,27 +102,71 @@ padding-left: 46px;
     color: var(--secondary-color);
 }
 
-.pj_header .pj_header__mode i:first-of-type{
+.pj_header .pj_header__mode i:first-child{
     padding: 10px;
     border-radius: 50%;
-    background-color: var(--primary-color);;
+    background-color: var(--primary-color);
     font-size: 14px;
+    transition: all .5s;
+}
+.pj_header__mode i:first-of-type:hover{
+    cursor: pointer;
+}
+.pj_header__mode a:focus i:first-child, .pj_header__mode a:focus i:first-child::before{
+    transform: scale(100);
+    color: transparent;
 }
 
 /* navbar */
 header .navbar{
     padding: 0.5rem 0;
+    position: relative;
 }
 .navbar-expand-lg .navbar-collapse{
     justify-content: center;
 }
+/* click search */
+.pj_header__input{
+    position: fixed;
+    top: 50%;
+    width: 100%;
+
+}
+.pj_header__buttonClose{
+    position: absolute;
+    bottom: -30px;
+    right: 20px;
+    transition: all .5s;
+}
+.pj_header__input form{
+    color: white;
+}
+.pj_header__input input::placeholder{
+    color: white;
+}
+.pj_header__input input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    transform: translate(50px,-50%);
+    color: white;
+    transition: all .5s;
+}
+
+
+
+.pj_header__buttonClose button{
+    font-size: 50px;
+    color: white;
+    border: none;
+    background-color: transparent;
+}
 
 /* !CAROUSEL */
-.pj_Carousel{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+
 .carousel__text{
     position: absolute;
     width: 100%;
