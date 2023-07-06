@@ -103,16 +103,18 @@
                 <div class="carousel-item">
                     <div class="pj_Carousel__img">
                         <img src="./img/b2.jpg" class="d-block w-100" alt="...">
-                                <div class="overlay"></div>
+                        <div class="overlay"></div>
 
                     </div>
                     <div class="carousel__text">
                         <div class="container">
-                            <h1 class="animate__animated animate__fadeInDown animate__delay-1s">Embracing success do our best, need best advice</h1>
+                            <h1 class="animate__animated animate__fadeInDown animate__delay-1s">Embracing success do our
+                                best, need best advice</h1>
                             <p class="animate__animated animate__fadeInDown animate__delay-0.5s">Lorem ipsum dolor sit
                                 amet consectetur adipisicing elit. Omnis adipisci mollitia et minus
                                 facere rerum dolore cupiditate! Esse, natus blanditiis!</p>
-                            <button class="button animate__animated animate__fadeInDown animate__delay-1s">Get Started</button>
+                            <button class="button animate__animated animate__fadeInDown animate__delay-1s">Get
+                                Started</button>
                         </div>
                     </div>
 
@@ -120,11 +122,12 @@
                 <div class="carousel-item">
                     <div class="pj_Carousel__img">
                         <img src="./img/b3.jpg" class="d-block w-100" alt="...">
-                                <div class="overlay"></div>
+                        <div class="overlay"></div>
                     </div>
                     <div class="carousel__text">
                         <div class="container">
-                            <h1 class="animate__animated animate__fadeInUp animate__delay-1s">Digital transformation driven by technology</h1>
+                            <h1 class="animate__animated animate__fadeInUp animate__delay-1s">Digital transformation
+                                driven by technology</h1>
                             <p class="animate__animated animate__fadeInUp animate__delay-0.5s">Lorem ipsum dolor sit
                                 amet consectetur adipisicing elit. Omnis adipisci mollitia et minus
                                 facere rerum dolore cupiditate! Esse, natus blanditiis!</p>
@@ -137,15 +140,17 @@
                 <div class="carousel-item">
                     <div class="pj_Carousel__img">
                         <img src="./img/b4.jpg" class="d-block w-100" alt="...">
-                                <div class="overlay"></div>
+                        <div class="overlay"></div>
                     </div>
                     <div class="carousel__text">
                         <div class="container">
-                            <h1 class="animate__animated animate__flipInX animate__delay-1s">For those who believe in leaving a mark</h1>
+                            <h1 class="animate__animated animate__flipInX animate__delay-1s">For those who believe in
+                                leaving a mark</h1>
                             <p class="animate__animated animate__fadeInDown animate__delay-0.5s">Lorem ipsum dolor sit
                                 amet consectetur adipisicing elit. Omnis adipisci mollitia et minus
                                 facere rerum dolore cupiditate! Esse, natus blanditiis!</p>
-                            <button class="button animate__animated animate__fadeInUp animate__delay-1s">Contact Now</button>
+                            <button class="button animate__animated animate__fadeInUp animate__delay-1s">Contact
+                                Now</button>
                         </div>
                     </div>
 
@@ -163,6 +168,13 @@
             </div>
 
         </div>
+        <div class="pj_Carousel__curve">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="300px">
+                <path id="wave" fill="#fff" d="M0,50 C350,280 330,200 600,130 S1000,400 2000,30 V300 H0 Z"
+                    width="100%" />
+            </svg>
+        </div>
+
     </section>
     <!-- ABOUT US  -->
     <section class="pj_AboutUs pj_Section">
@@ -324,6 +336,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
         integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- greensock -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script>
+        const wave = document.getElementById('wave');
+
+        gsap.to(wave, {
+            attr: { d: "M0,200 C250,100 330,200 800,60 S1000,450 2000,-100 V300 H0 Z" },
+            duration: 6,
+            repeat: -1,
+            yoyo: true
+        });
+    </script>
 
     <!-- speed_carousel -->
     <script>

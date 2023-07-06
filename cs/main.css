@@ -233,8 +233,9 @@ header .navbar{
 }
 .pj_Carousel__click{
     position: absolute;
-    bottom: 150px;
+    bottom: 120px;
     right: 0;
+    z-index: 1;
 }
 .pj_Carousel__back,.pj_Carousel__next{
     width: 50px;
@@ -244,6 +245,12 @@ header .navbar{
     border: none;
     margin-right: 20px;
     box-shadow: 1px 0px 10px 6px rgba(0,0,0,0.1);
+}
+.pj_Carousel__curve{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 
