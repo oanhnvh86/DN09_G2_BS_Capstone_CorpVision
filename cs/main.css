@@ -24,11 +24,13 @@ html, body{
     font-size: 17px;
     line-height: 27px;
     color: #666;;
-}
+    }
 p{
     margin: 0;
 }
+body{
 
+}
 .pj_Section{
     padding:70px 0;
 }
@@ -58,20 +60,30 @@ p{
     border-radius: 10px;
     border: none;
     color: white;
+    user-select: none;
 }
+/* turn light */
+
 
 /* !ANIMATION */
 
 /* !HEADER */
 header{
+    background-color: pink;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 20;
     width: 100%;
     border-bottom: 1px solid rgba(231, 231, 231, 0.18);
-    padding: 10px 0;
+    padding: 0 0;
+    transition: all .3s ease;
 }
+.scrollheader {
+    padding: 10px 0;
+    background-color: transparent;
+}
+
 .pj_header {
     color: var(--secondary-color);  
 }
@@ -139,7 +151,35 @@ padding-left: 46px;
 header .navbar{
     padding: 0.5rem 0;
     position: relative;
-    background-color: #213364;
+
+}
+.pj_header__search form{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.pj_header__search form input{
+    height: 100vh;
+    width: 100%;
+    font-size: 60px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+}
+.pj_header__search .icon-close{
+    position: absolute;
+    bottom: -35px;
+    right: 40px;
+    font-size: 50px;
+    display: none;
+}
+.pj_header__search form input::placeholder{
+    color: white;
 }
 .pj_header__nav ul{
     width: 100%;
@@ -153,45 +193,42 @@ header .navbar{
     text-transform: uppercase;
     text-align: center;
 }
-/* click search */
-/* .pj_header__input{
-    position: absolute;
-    top: 50%;
-    width: 100%;
-
+/* tắt đèn */
+#bodyDark{
+    background-color: white;
 }
-.pj_header__buttonClose{
-    position: absolute;
-    bottom: -30px;
-    right: 20px;
-    transition: all .5s;
+.turnlight .fa-moon {
+    display: block;
 }
-.pj_header__input form{
-    color: white;
-}
-.pj_header__input input::placeholder{
-    color: white;
-}
-.pj_header__input input{
-    border: none;
-    outline: none;
-    background-color: transparent;
-    width: 100%;
-    height: 100%;
-    font-size: 50px;
-    transform: translate(50px,-50%);
-    color: white;
-    transition: all .5s;
+.turnlight .fa-sun {
+    display: none;
 }
 
+/* bật đèn */
+
+.dark#bodyDark {
+    background-color: #151421;
+}
+.dark .turnlight .fa-moon {
+    display: none;
+}
+.dark .turnlight .fa-sun {
+    display: block;
+}
+.dark path{
+    fill: #151421;
+}
+.dark .pj_Product{
+    background-color: #100f19;
+}
+.dark .pj_Product__border{
+    background-color: #151421;
+}
+.dark .card{
+    background-color: #151421;
+}
 
 
-.pj_header__buttonClose button{
-    font-size: 50px;
-    color: white;
-    border: none;
-    background-color: transparent;
-} */
 
 /* !CAROUSEL */
 
@@ -209,6 +246,7 @@ header .navbar{
     color: white;
     max-width: 800px;
     font-weight: 600;
+    user-select: none;
 }
 .carousel__text p {
     font-size: 20px;
@@ -217,12 +255,13 @@ header .navbar{
     color: #fff;
     letter-spacing: 0.010em;
     opacity: .9;
-    margin: 10px 0 40px
-
+    margin: 10px 0 40px;
+    user-select: none;
 }
 .pj_Carousel{
     position: relative;
 }
+
 .overlay{
     position: absolute;
     top: 0;
@@ -246,7 +285,7 @@ header .navbar{
     margin-right: 20px;
     box-shadow: 1px 0px 10px 6px rgba(0,0,0,0.1);
 }
-.pj_Carousel__curve{
+.pj_Carousel__wave{
     position: absolute;
     left: 0;
     bottom: 0;
