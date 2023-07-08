@@ -1,0 +1,13 @@
+.pj_Gallery{
+    text-align: center;
+    background-color: var(--bg-lightgrey);
+}
+
+.pj_Gallery__brand{
+    padding: 50px 80px;
+}
+.pj_Gallery__brand img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
