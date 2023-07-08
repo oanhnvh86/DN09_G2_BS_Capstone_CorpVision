@@ -3,6 +3,72 @@
     background-color: var(--bg-lightgrey);
 }
 
+.pj_Gallery .card{
+    overflow: hidden;
+    position: relative;
+    border-radius: 0;
+}
+.pj_Gallery .card img{
+    object-fit: contain;
+    transition: all, .5s;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.pj_Gallery__CardBodyOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22, 1, 1, 0.6);
+    opacity: 0;
+    transition: all 0.75s;
+}
+
+.pj_Gallery .card-body{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    
+    text-align: left;
+    color: white;
+
+    opacity: 0;
+
+    transform: translateY(150px); 
+    transition: all, .5s;
+
+}
+
+.pj_Gallery .card-body h5{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.pj_Gallery .card-body p{
+    font-size: 18px;
+    color: #eee;;
+}
+
+
+.pj_Gallery .card:hover .pj_Gallery__CardBodyOverlay{
+    opacity: 1;
+}
+.pj_Gallery .card:hover .card-body{
+    opacity: 1;
+    transform: translate(0, 0);
+    /*kéo ngược về vị trí tọa độ 0, tạo hiệu ứng di chuyển*/
+}
+
+.pj_Gallery .card:hover img{
+    overflow: hidden;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+
 .pj_Gallery__brand{
     padding: 50px 80px;
 }

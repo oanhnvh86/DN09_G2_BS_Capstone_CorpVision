@@ -93,6 +93,7 @@ footer form button.btn-primary{
     font-size: 22px;
     /* font-weight: 600; */
     text-transform: capitalize;
+    margin-bottom: 20px;
 }
 .footer__info p {
     margin: 0 0 5px 0;
@@ -107,6 +108,11 @@ footer form button.btn-primary{
 .footer__info ul li a {
     text-decoration: none;
     color: #97a1a9;
+    transition: all .5s;
+}
+
+.footer__info ul li:hover a {
+    color: #fff;
     
 }
 
@@ -121,7 +127,12 @@ footer form button.btn-primary{
 }
 .footer__icon i {
     color: #97a1a9;
+    transition: all .5s;
     
+}
+
+.footer__icon a:hover i {
+    color: #fff;
 }
 
 .footer__bottom{
@@ -130,6 +141,12 @@ footer form button.btn-primary{
     text-align: center;
 }
 
-.footer__bottom span{
+.footer__bottom span a{
     color: var(--primary-color);
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.footer__bottom span:hover a{
+    color: #fff;
 }
