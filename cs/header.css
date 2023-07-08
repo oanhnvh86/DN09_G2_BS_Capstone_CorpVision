@@ -1,0 +1,127 @@
+/* !HEADER */
+header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    width: 100%;
+    border-bottom: 1px solid rgba(231, 231, 231, 0.18);
+    padding: 10px 0;
+    background-color: transparent;
+    transition: all .3s ease;
+}
+.scrollheader {
+    background-color: pink;
+    padding: 0 0;
+}
+
+.pj_header {
+    color: var(--secondary-color);  
+}
+
+/* navbar */
+
+.pj_header .navbar{
+    justify-content: space-between;
+}
+
+.pj_header .navbar-brand p:first-of-type{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    
+    margin-bottom: 0;
+}
+
+.pj_header .navbar-brand p:last-of-type{
+font-size: 14px;
+font-weight: 600;
+padding-left: 46px;
+
+}
+
+.pj_header .navbar-brand i{
+    color: var(--primary-color);
+}
+
+
+.pj_header .navbar-nav {
+    margin: auto 0 !important;
+}
+.pj_header .navbar-nav .nav-link{
+    color: var(--secondary-color);
+}
+.pj_header__mode{
+    display: flex;
+    align-items: center;
+}
+
+.pj_header .pj_header__mode a:first-child i{
+    padding: 15px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    font-size: 15px;
+    color: white;
+    transition: all .5s;
+    margin-right: 30px;
+
+}
+.pj_header__mode i:first-of-type:hover{
+    cursor: pointer;
+}
+.pj_header__mode a:focus i:first-child, .pj_header__mode a:focus i:first-child::before{
+    transform: scale(100);
+    color: transparent;
+}
+.pj_header__mode a:last-of-type{
+    font-size: 30px;
+    color: white;
+}
+
+
+header .navbar{
+    padding: 0.5rem 0;
+    position: relative;
+
+}
+.pj_header__search form{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.pj_header__search form input{
+    height: 100vh;
+    width: 100%;
+    font-size: 60px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+}
+.pj_header__search .icon-close{
+    position: absolute;
+    bottom: -35px;
+    right: 40px;
+    font-size: 50px;
+    display: none;
+}
+.pj_header__search form input::placeholder{
+    color: white;
+}
+.pj_header__nav ul{
+    width: 100%;
+    justify-content: center;
+}
+.navbar-expand-lg .navbar-collapse{
+    justify-content: center;
+}
+.navbar li a{
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}

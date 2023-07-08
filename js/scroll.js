@@ -3,15 +3,10 @@
  * cho thẻ đó addEventListener có sự kiện cuộn trang vị trí là x0,y0;
  * gán cho sự kiện đó có css mới*/
 
-// window.addEventListener("scroll", function() {
-//     if (window.scrollY > 0) {
-//       var headerr = document.getElementById("scrollTop");
-//       headerr.classList.add("scrollheader");
-//     }
-//   });
+
 function scrollll() {
     var headerr = document.getElementById("scrollTop");
-    if (window.scrollY === 0) {
+    if (window.scrollY > 0) {
         headerr.classList.add("scrollheader");
     }
     else {

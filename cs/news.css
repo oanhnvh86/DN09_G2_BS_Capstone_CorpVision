@@ -1,0 +1,9 @@
+.pj_News .card__bottom {
+    border-top: 1px solid #eee;
+}
+
+.pj_News .card{
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+}
