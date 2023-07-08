@@ -21,26 +21,34 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
+    <!-- owl -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./cs/main.css">
 </head>
 
-<body>
+<body id="bodyDark">
     <!-- HEADER  -->
-    <header>
+    <header id="scrollTop">
         <div class="pj_header container">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="pj_header__logo">
                     <a class="navbar-brand" href="#">
                         <p><i class="fa-solid fa-align-right"></i> Corp Vision</p>
                         <p>Vision to your Future</p>
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCorpVision"
-                        aria-controls="navbarCorpVision" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
                 </div>
-                <div class="collapse navbar-collapse" id="navbarCorpVision">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCorpVision"
+                    aria-controls="navbarCorpVision" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="pj_header__nav collapse navbar-collapse" id="navbarCorpVision">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -56,89 +64,126 @@
                                 aria-expanded="false">
                                 Pages
                             </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
-                    <!-- <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form> -->
-                </div>
+                    <div class="pj_header__mode">
+                        <div class="pj_header__search">
+                            <a id="clickSearch" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <!-- <form id="formm">
+                                <input type="text" placeholder="Start Typing">
+                            </form>
+                            <i id="clickClose" class="icon-close fa fa-close material-icons"></i> -->
+                        </div>
+                        <div class="turnlight" id="turnLight">
+                            <i class="fa-regular fa-moon"></i>
+                            <i class="fa-regular fa-sun"></i>
+                        </div>
 
-                <div class="pj_header__mode">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-regular fa-moon"></i>
-                    <i class="fa-solid fa-sun-bright"></i>
+                    </div>
                 </div>
             </nav>
         </div>
     </header>
     <!-- CAROUSEL -->
     <section class="pj_Carousel">
-        <div id="carouselCorpVision" class="carousel ">
-            <!--slide-->
-            <!--data-ride="carousel"-->
-            <!-- <ol class="carousel-indicators">
-                <li data-target="#carouselCorpVision" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselCorpVision" data-slide-to="1"></li>
-                <li data-target="#carouselCorpVision" data-slide-to="2"></li>
-            </ol> -->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./img/b1.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>We will solve your issues our vision to your future</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis adipisci mollitia et minus
-                            facere rerum dolore cupiditate! Esse, natus blanditiis!</p>
-                        <button>Learn More</button>
+                    <div class="pj_Carousel__img">
+                        <img src="./img/b1.jpg" class="d-block w-100 img-fluid" alt="...">
+                        <div class="overlay"></div>
                     </div>
+                    <div class="carousel__text">
+                        <div class="container">
+                            <h1 class="animate__animated animate__flipInX animate__delay-1s">We will solve your issues
+                                our vision to your future</h1>
+                            <p class="animate__animated animate__fadeInDown animate__delay-0.5s">Lorem ipsum dolor sit
+                                amet consectetur adipisicing elit. Omnis adipisci mollitia et minus
+                                facere rerum dolore cupiditate! Esse, natus blanditiis!</p>
+                            <button class="button animate__animated animate__fadeInUp animate__delay-1s">Learn
+                                More</button>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/b2.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Embracing success do our best, need best advice</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis adipisci mollitia et minus
-                            facere rerum dolore cupiditate! Esse, natus blanditiis!</p>
-                        <button>Learn More</button>
+                    <div class="pj_Carousel__img">
+                        <img src="./img/b2.jpg" class="d-block w-100" alt="...">
+                        <div class="overlay"></div>
 
                     </div>
+                    <div class="carousel__text">
+                        <div class="container">
+                            <h1 class="animate__animated animate__fadeInDown animate__delay-1s">Embracing success do our
+                                best, need best advice</h1>
+                            <p class="animate__animated animate__fadeInDown animate__delay-0.5s">Lorem ipsum dolor sit
+                                amet consectetur adipisicing elit. Omnis adipisci mollitia et minus
+                                facere rerum dolore cupiditate! Esse, natus blanditiis!</p>
+                            <button class="button animate__animated animate__fadeInDown animate__delay-1s">Get
+                                Started</button>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/b1.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Digital transformation driven by technology</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum necessitatibus qui
-                            consequuntur nam aspernatur sed in consequatur assumenda enim quaerat!</p>
-                        <button>Learn More</button>
+                    <div class="pj_Carousel__img">
+                        <img src="./img/b3.jpg" class="d-block w-100" alt="...">
+                        <div class="overlay"></div>
                     </div>
+                    <div class="carousel__text">
+                        <div class="container">
+                            <h1 class="animate__animated animate__fadeInUp animate__delay-1s">Digital transformation
+                                driven by technology</h1>
+                            <p class="animate__animated animate__fadeInUp animate__delay-0.5s">Lorem ipsum dolor sit
+                                amet consectetur adipisicing elit. Omnis adipisci mollitia et minus
+                                facere rerum dolore cupiditate! Esse, natus blanditiis!</p>
+                            <button class="button animate__animated animate__fadeInDown animate__delay-1s">Learn
+                                More</button>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/b2.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>For those who believe in leaving a mark</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum necessitatibus qui
-                            consequuntur nam aspernatur sed in consequatur assumenda enim quaerat!</p>
-                        <button>Learn More</button>
+                    <div class="pj_Carousel__img">
+                        <img src="./img/b4.jpg" class="d-block w-100" alt="...">
+                        <div class="overlay"></div>
                     </div>
+                    <div class="carousel__text">
+                        <div class="container">
+                            <h1 class="animate__animated animate__flipInX animate__delay-1s">For those who believe in
+                                leaving a mark</h1>
+                            <p class="animate__animated animate__fadeInDown animate__delay-0.5s">Lorem ipsum dolor sit
+                                amet consectetur adipisicing elit. Omnis adipisci mollitia et minus
+                                facere rerum dolore cupiditate! Esse, natus blanditiis!</p>
+                            <button class="button animate__animated animate__fadeInUp animate__delay-1s">Contact
+                                Now</button>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-target="#carouselCorpVision" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-target="#carouselCorpVision" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </button>
+            <div class="pj_Carousel__click">
+                <button class="pj_Carousel__back" type="button" data-target="#carouselExampleControls"
+                    data-slide="prev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="pj_Carousel__next" type="button" data-target="#carouselExampleControls"
+                    data-slide="next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
         </div>
+        <div class="pj_Carousel__wave">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="300px">
+                <path id="wave" fill="#fff" d="M0,50 C350,280 330,200 600,130 S1000,400 2000,30 V300 H0 Z"
+                    width="100%" />
+            </svg>
+        </div>
+
     </section>
     <!-- ABOUT US  -->
     <section class="pj_AboutUs pj_Section">
@@ -272,6 +317,12 @@
         </div>
     </section>
     <!-- GALLERY -->
+
+
+
+
+
+    <section class="pj_Gallery"></section>
     <section class="pj_Gallery pj_Section">
         <div class="container">
             <div class="pj_title">
@@ -599,6 +650,8 @@
     
     </footer>
 
+
+
     <!-- BS4.6 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
@@ -606,8 +659,32 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
+    <!-- owl -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- greensock -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script>
+        const wave = document.getElementById('wave');
 
+        gsap.to(wave, {
+            attr: { d: "M0,200 C250,100 330,200 800,60 S1000,450 2000,-100 V300 H0 Z" },
+            duration: 6,
+            repeat: -1,
+            yoyo: true
+        });
+    </script>
 
+    <!-- speed_carousel -->
+    <script>
+        $('.carousel').carousel({
+            interval: 4000
+        })
+    </script>
+    <script src="./js/search.js"></script>
+    <script src="./js/turnlight.js"></script>
+    <script src="./js/scroll.js"></script>
 </body>
 
 </html>
