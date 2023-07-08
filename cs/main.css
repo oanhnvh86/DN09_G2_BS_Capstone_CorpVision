@@ -19,12 +19,17 @@
 @import url(./service.css);
 
 /* !GALLERY */
+@import url(./gallery.css);
 
 /* !PROGRESS */
+@import url(./progress.css);
 
 /* !FEEDBACK */
+@import url(./feadback.css);
 
 /* !NEWS */
+@import url(./news.css);
 
 /* !FOOTER */
+@import url(./footer.css);
 

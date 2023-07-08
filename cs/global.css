@@ -10,7 +10,7 @@
     --bg-white: #fff;
     --bg-grey: #f7f7f7;
     --bg-footer: #151421;
-    
+    --bg-lightgrey: #f8f9fa;
   }
 
 *{
@@ -22,24 +22,26 @@ html, body{
     font-family: 'Jost', sans-serif;
     font-size: 17px;
     line-height: 27px;
-    color: #666;;
+    color: var(--font-color);
 }
 
 .pj_Section{
     padding:70px 0;
 }
 
-.pj_Title p {
+.pj_title p {
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     line-height: 30px;
     letter-spacing: 1px;
     color: #7e7d7d;
-    
+    letter-spacing: 1px;
 }
-.pj_Title h2 {
+
+.pj_title h2 {
     font-size: 35px;
     line-height: 45px;
     font-weight: 700;
+    color: var(--heading-color);
 }

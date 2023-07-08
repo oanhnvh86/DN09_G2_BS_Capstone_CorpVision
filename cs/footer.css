@@ -1,0 +1,135 @@
+footer {
+
+background-color: #151421;
+/* color: white; */
+/* text-align: center; */
+} 
+
+.footer__top{
+    background-image: url(../img/map.png);
+    padding: 80px 0;
+    text-align:  center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.footer__top h1{
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 700;
+    color: white;
+}
+
+.footer__top p{
+    color: #eee;
+    font-size: 17px;
+    line-height: 27px;
+    margin-top: 15px;
+}
+
+footer form {
+    display: grid;
+    grid-template-columns: 50px  1fr auto;/*repeat(3, 1fr);*/
+    
+    max-width: 550px;
+    margin: auto;
+}
+
+footer form span{
+    /* display: flex;
+    align-items: center; */
+    padding: 14px;
+
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+
+    border-color: rgba(255, 255, 255, 0.15) ;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #999;
+}
+
+footer form input {
+    /* width: 100%; */
+    padding: 14px 20px;
+    font-size: 16px;
+    line-height: 28px;
+    
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-left: none;
+    border-radius: 0;
+
+    color: #999;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer form button.btn {
+    
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 0 25px;
+    font-size: 16px;
+}
+footer form button.btn-primary{
+    background-color: var(--primary-color);
+    border: transparent;
+} 
+
+.footer__info {
+    color: #97a1a9;
+    font-size: 18px;
+    line-height: 28px;
+    color: #97a1a9;
+    border-top: 1px solid rgba(249, 249, 249, 0.1);
+
+}
+
+.footer__info h6 {
+    color: white;
+    font-size: 22px;
+    /* font-weight: 600; */
+    text-transform: capitalize;
+}
+.footer__info p {
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+.footer__info ul {
+    list-style: none;
+}
+.footer__info ul li {
+    margin: 0 0 8px 0;
+}
+.footer__info ul li a {
+    text-decoration: none;
+    color: #97a1a9;
+    
+}
+
+.footer__info i{
+    color: var(--primary-color);
+}
+.footer__info .navbar-brand p{
+    color: white;
+}
+.footer__icon a {
+    margin-right: 15px;
+}
+.footer__icon i {
+    color: #97a1a9;
+    
+}
+
+.footer__bottom{
+    padding: 20px 0;
+    border-top: 1px solid rgba(249, 249, 249, 0.1);
+    text-align: center;
+}
+
+.footer__bottom span{
+    color: var(--primary-color);
+}
