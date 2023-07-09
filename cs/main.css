@@ -1,5 +1,9 @@
 /* !GOBAL */
-/* HEADER */
+@import url(./global.css);
+
+/* !ANIMATION */
+
+/* !HEADER */
 @import url(./header.css); 
 
 /* CAROUSEL */
@@ -28,109 +32,6 @@
 
 /* !FOOTER */
 @import url(./footer.css);
-:root {
-    --primary-color: #009f4d;
-    --secondary-color: #fff;
-    --title-color: #7e7d7d;
-    --heading-color: #213364;
-    --font-color: #666;
-    --newstitle-color:#999;
-    --footer-color:#97a1a9;
-    --bg-white: #fff;
-    --bg-grey: #f7f7f7;
-    --bg-footer: #151421;
-    
-  }
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html, body{
-    font-family: 'Jost', sans-serif;
-    font-size: 17px;
-    line-height: 27px;
-    color: #666;;
-    }
-p{
-    margin: 0;
-}
-body{
-
-}
-.pj_Section{
-    padding:70px 0;
-}
-
-.pj_Title p {
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    line-height: 30px;
-    letter-spacing: 1px;
-    color: #7e7d7d;
-    
-}
-.pj_Title h2 {
-    font-size: 35px;
-    line-height: 45px;
-    font-weight: 700;
-}
-@import url(./global.css);
-
-/* button màu xanh */
-.button{
-    background-color: #29a75b;
-    padding: 15px 50px;
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 600;
-    border-radius: 10px;
-    border: none;
-    color: white;
-    user-select: none;
-}
-/* turn light */
-
-
-/* !ANIMATION */
-
-
-/* tắt đèn */
-#bodyDark{
-    background-color: white;
-}
-.turnlight .fa-moon {
-    display: block;
-}
-.turnlight .fa-sun {
-    display: none;
-}
-
-/* bật đèn */
-
-.dark#bodyDark {
-    background-color: #151421;
-}
-.dark .turnlight .fa-moon {
-    display: none;
-}
-.dark .turnlight .fa-sun {
-    display: block;
-}
-.dark path{
-    fill: #151421;
-}
-.dark .pj_Product{
-    background-color: #100f19;
-}
-.dark .pj_Product__border{
-    background-color: #151421;
-}
-.dark .card{
-    background-color: #151421;
-}
 
 
 
