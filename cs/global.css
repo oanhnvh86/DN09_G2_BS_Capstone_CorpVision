@@ -11,7 +11,15 @@
     --bg-grey: #f7f7f7;
     --bg-footer: #151421;
     --bg-lightgrey: #f8f9fa;
+    --bg-TurnOnMoon-1: #151421;
+    --bg-TurnOnMoon-2: #100f19;
   }
+
+/* [data-theme="dark"] {
+    --primary-color: #009f4d;
+    --secondary-color: #213364;
+    --font-color: #c2c2c2;
+} */
 
 *{
     margin: 0;

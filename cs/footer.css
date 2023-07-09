@@ -135,6 +135,18 @@ footer form button.btn-primary{
     color: #fff;
 }
 
+.footer__info .navbar-brand p:first-of-type{
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+
+.footer__info .navbar-brand p:nth-of-type(2){
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 25px;
+}
+
 .footer__bottom{
     padding: 20px 0;
     border-top: 1px solid rgba(249, 249, 249, 0.1);
