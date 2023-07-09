@@ -126,38 +126,3 @@ header .navbar{
     text-align: center;
 }
 
-
-/* /* tắt đèn */
-#bodyDark{
-    background-color: white;
-}
-.turnlight .fa-moon {
-    display: block;
-}
-.turnlight .fa-sun {
-    display: none;
-}
-
-/* /* bật đèn  */
-
-.dark#bodyDark {
-    background-color: #151421;
-}
-.dark .turnlight .fa-moon {
-    display: none;
-}
-.dark .turnlight .fa-sun {
-    display: block;
-}
-.dark path{
-    fill: #151421;
-}
-.dark .pj_Product{
-    background-color: #100f19;
-}
-.dark .pj_Product__border{
-    background-color: #151421;
-}
-.dark .card{
-    background-color: #151421;
-} 

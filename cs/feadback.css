@@ -26,10 +26,13 @@
 
 
 .pj_Feedback__left img{
+    /* width: 70px;
+    height: 70px; */
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    object-fit: over;
+    object-fit: cover;
+    object-position: center;
     
 }
 .pj_Feedback__right h6 {
