@@ -1,9 +1,68 @@
-.pj_News .card__bottom {
-    border-top: 1px solid #eee;
+
+.pj_News {
+    background-color: rgba(255, 255, 255, 0.534)
 }
 
 .pj_News .card{
     border: none;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 5px;
+    
+}
+
+.pj_News__img{
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.pj_News .card img{
+    overflow: hidden;
+    transition: all, .5s;
+}
+
+.pj_News .card-title{
+    font-size: 17px;
+    font-weight: 400;
+    color: #999;
+}
+
+.pj_News .card-text{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+.pj_News .card__bottom {
+    border-top: 1px solid #eee;
+}
+
+.pj_News .card__bottom span:first-of-type{
+    font-size: 15px;
+    font-weight: 600;
+    color: #666;
+}
+
+.pj_News .card__bottom span:nth-of-type(2){
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--heading-color);
+}
+
+.pj_News .card__bottom span:last-of-type{
+    font-size: 15px;
+    margin-left: 80px;
+    color: #666;
+}
+
+
+.pj_News .card:hover img{
+    overflow: hidden;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.pj_News .card:hover .card-body p{
+    color: var(--primary-color);
 }

@@ -3,14 +3,19 @@
 }
 .pj_AboutUs ul i{
     color: white;
-    padding: 10px;
+    padding: 2px;
     border-radius: 50%;
     background-color: var(--primary-color);
+    font-size: 10px;
+    vertical-align: 4px;
+    
 }
 .pj_AboutUs ul li {
     font-size: 18px;
     line-height: 28px;
     font-weight: 600;
+    color: var(--heading-color);
+    margin-bottom: 10px;
 }
 
 .pj_AboutUs img{

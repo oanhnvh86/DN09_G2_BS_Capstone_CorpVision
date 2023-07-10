@@ -2,3 +2,74 @@
     text-align: center;
     background-color: var(--bg-lightgrey);
 }
+
+#pj_CarouselFeedback{
+    width:80%;
+    margin:0 auto;
+    padding: 40px 30px;
+    
+
+}
+
+.pj_Feedback__des{
+    width: 30%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-gap: 20px;
+    
+    text-align: left;
+    margin-top: 20px;
+    
+}
+
+
+.pj_Feedback__left img{
+    /* width: 70px;
+    height: 70px; */
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+.pj_Feedback__right h6 {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--heading-color);
+}
+
+.pj_Feedback .carousel-indicators{
+    height: 30px;
+    line-height: 30px;
+}
+.pj_Feedback .carousel-indicators ol{
+    width: 100px;
+}
+.pj_Feedback .carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    
+    border-radius: 50%;
+    background-color: #213364;
+    opacity: .5;
+
+    transition: all .5s;
+    margin: 0 10px;
+}
+.pj_Feedback .carousel-indicators li.active{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #213364;
+    opacity: 1;
+}
+
+.pj_Feedback .carousel-indicators li:hover{
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+}
+

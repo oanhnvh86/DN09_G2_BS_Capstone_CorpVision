@@ -11,7 +11,15 @@
     --bg-grey: #f7f7f7;
     --bg-footer: #151421;
     --bg-lightgrey: #f8f9fa;
+    --bg-TurnOnMoon-1: #151421;
+    --bg-TurnOnMoon-2: #100f19;
   }
+
+/* [data-theme="dark"] {
+    --primary-color: #009f4d;
+    --secondary-color: #213364;
+    --font-color: #c2c2c2;
+} */
 
 *{
     margin: 0;
@@ -44,4 +52,16 @@ html, body{
     line-height: 45px;
     font-weight: 700;
     color: var(--heading-color);
+}
+
+.button{
+    background-color: #29a75b;
+    padding: 15px 50px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    user-select: none;
 }

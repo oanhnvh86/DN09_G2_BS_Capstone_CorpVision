@@ -1,0 +1,108 @@
+
+/* !tắt đèn - SUN */
+#bodyDark{
+    background-color: var(--bg-White);
+}
+.turnlight .fa-moon {
+    display: block;
+}
+.turnlight .fa-sun {
+    display: none;
+}
+
+/* !bật đèn -- MOON  */
+
+#bodyDark.dark {
+    background-color: var(--bg-TurnOnMoon-1); /*#151421;*/
+}
+.dark .turnlight .fa-moon {
+    display: none;
+}
+.dark .turnlight .fa-sun {
+    display: block;
+}
+.dark path{
+    fill: #151421;
+}
+
+.dark .pj_News
+{
+    background-color: var(--bg-TurnOnMoon-1);
+}
+
+.dark .pj_Product
+,.dark .pj_Gallery
+,.dark .pj_Feedback
+{
+    background-color: var(--bg-TurnOnMoon-2);
+}
+
+.dark .pj_title h2
+,.dark .pj_AboutUs li
+{
+    color: var(--secondary-color);
+}
+
+.dark .pj_Product__border a {
+    color: white;
+}
+
+.dark .pj_AboutUs li i
+{
+    color: black;
+}
+
+.dark .pj_Product__border{
+    background-color: #151421;
+}
+.dark .card{
+    background-color: #151421;
+} 
+
+.dark .pj_Service .card-body .card-title {
+    background-color: var(--bg-TurnOnMoon-2);
+}
+.dark .pj_Service .card-body .card-title a 
+,.dark .pj_Service .card-body a 
+{
+    color: white;
+}
+
+.dark .pj_Gallery .pj_Gallery__brand {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.dark .pj_Progress .progress__title{
+    color: white;
+}
+
+.dark .pj_Progress .progress {
+    background-color: #100f19;
+}
+
+.dark .pj_Feedback__right h6{
+    color: white;
+}
+
+.dark .pj_News .card-text {
+    color: white;
+}
+
+.dark .pj_News .card {
+    background-color: var(--bg-TurnOnMoon-2);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+
+.dark .pj_News .card__bottom{
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.dark .pj_News .card__bottom img{
+    border-radius: 50%;
+}
+
+.dark .pj_News .card__bottom span:nth-of-type(2){
+    color: white
+}

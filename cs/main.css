@@ -1,32 +1,39 @@
-/* !GOBAL */
+/* GOBAL */
+@import url(./global.css);
+
+/* ANIMATION */
+
 /* HEADER */
 @import url(./header.css); 
+
+/* HEADER - SWITCH SUN-MOON */
+@import url(./switch_sun_moon.css); 
 
 /* CAROUSEL */
 @import url(./carousel.css);
 
-/* !ABOUT US */
+/* ABOUT US */
 @import url(./about.css);
 
-/* !PRODUCT */
+/* PRODUCT */
 @import url(./product.css);
 
-/* !SERVICE */
+/* SERVICE */
 @import url(./service.css);
 
-/* !GALLERY */
+/* GALLERY */
 @import url(./gallery.css);
 
-/* !PROGRESS */
+/* PROGRESS */
 @import url(./progress.css);
 
-/* !FEEDBACK */
+/* FEEDBACK */
 @import url(./feadback.css);
 
-/* !NEWS */
+/* NEWS */
 @import url(./news.css);
 
-/* !FOOTER */
+/* FOOTER */
 @import url(./footer.css);
 :root {
     --primary-color: #009f4d;
@@ -134,6 +141,8 @@ body{
 }
 
 
+/* BACKTOTOP */
+@import url(./backtotop.css); 
 
 
 
