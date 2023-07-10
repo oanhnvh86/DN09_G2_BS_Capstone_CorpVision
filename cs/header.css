@@ -7,9 +7,10 @@ header{
     z-index: 20;
     width: 100%;
     border-bottom: 1px solid rgba(231, 231, 231, 0.18);
-    padding: 10px 0;
+    /* padding: 10px 0; */
     background-color: transparent;
     transition: all .3s ease;
+    
 }
 .scrollheader {
     background-color: pink;
@@ -23,7 +24,8 @@ header{
 /* navbar */
 
 .pj_header .navbar{
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    align-items: center;
 }
 
 .pj_header .navbar-brand p:first-of-type{
