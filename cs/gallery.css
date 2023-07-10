@@ -70,12 +70,13 @@
 
 
 .pj_Gallery__brand{
-    padding: 50px 80px;
+    padding: 50px 0 30px;
 }
 .pj_Gallery__brand img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    /* object-fit: cover; */
+    padding: 0 18px;
 }
 
 .pj_Gallery .pj_Gallery__brand {

@@ -24,13 +24,19 @@
     
 }
 
-
-.pj_Feedback__left img{
-    /* width: 70px;
-    height: 70px; */
+.pj_Feedback__left{
     width: 70px;
     height: 70px;
     border-radius: 50%;
+    overflow: hidden;
+}
+.pj_Feedback__left img{
+    /* width: 70px;
+    height: 70px; 
+    border-radius: 50%;*/
+    width: 100%;
+    height: auto;
+    /* height: 100%; */
     object-fit: cover;
     object-position: center;
     
