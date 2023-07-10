@@ -55,3 +55,22 @@
 
 .pj_Product__border a:hover{
     color: var(--primary-color);}
+
+@media screen and (max-width:450px) {
+    /* .pj_Product .product__right .col-6{
+        padding: 15px 10px 15px 0;
+    } */
+
+    .pj_Product__border{
+        padding: 20px 10px;
+    }
+
+    .pj_Product__border img{
+        width: 45px;
+        /* height: 100%; */
+    }
+    .pj_Product__border a{
+        font-size: 18px;
+        margin-top: 15px;
+    }
+}

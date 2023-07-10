@@ -179,3 +179,15 @@ footer form button.btn-primary{
 .footer__bottom span:hover a{
     color: #fff;
 }
+
+
+@media screen and (max-width:450px) {
+    footer form {
+        max-width: 400px;
+        margin: auto;
+    }
+
+    footer form button.btn {
+        padding: 0 15px;
+    }
+}
