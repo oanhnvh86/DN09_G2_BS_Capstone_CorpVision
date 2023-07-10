@@ -11,14 +11,28 @@ header{
     background-color: transparent;
     transition: all .3s ease;
 }
-.scrollheader {
-    background-color: pink;
-    padding: 0 0;
-}
-
 .pj_header {
     color: var(--secondary-color);  
 }
+
+/* header sau khi scroll */
+.scrollheader {
+    background-color: white;
+    padding: 0 0;
+}
+.greenactive .pj_header .navbar-nav .nav-link{
+    color: #787592;
+}
+.greenactive .pj_header__nav .nav-item .nav-link#active {
+    color: green;
+}
+.greenactive .navbar-dark .navbar-brand {
+    color: #404040;
+}
+.greenactive #turnLight i{
+    color: #404040;
+}
+
 
 /* navbar */
 
@@ -51,6 +65,7 @@ padding-left: 46px;
 }
 .pj_header .navbar-nav .nav-link{
     color: var(--secondary-color);
+    font-size: 15px;
 }
 .pj_header__mode{
     display: flex;
@@ -74,9 +89,13 @@ padding-left: 46px;
     transform: scale(100);
     color: transparent;
 }
-.pj_header__mode a:last-of-type{
-    font-size: 30px;
+.pj_header__mode a {
     color: white;
+    
+}
+.pj_header__mode .turnlight i {
+    font-size: 25px;
+    transform: rotate(-20deg);
 }
 
 
@@ -124,4 +143,10 @@ header .navbar{
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
+}
+.navbar .navbar-toggler{
+    font-size: 20px;
+    padding: 0.3rem 0.35rem;
+    background-color: #009f4d;
+    color: white;
 }
