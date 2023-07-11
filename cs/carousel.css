@@ -8,7 +8,7 @@
     color: white;
 }
 .carousel__text h1{
-    font-size: 65px;
+    font-size: 60px;
     line-height: 1.1;
     margin-bottom: 18px;
     color: white;
@@ -40,7 +40,7 @@
 }
 .pj_Carousel__click{
     position: absolute;
-    bottom: 120px;
+    bottom: 30px;
     right: 0;
     z-index: 1;
 }
@@ -56,6 +56,51 @@
 .pj_Carousel__wave{
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -80px;
     width: 100%;
+}
+.pj_Carousel__img img {
+    height: 800px;
+    
+}
+/* responsive */
+@media screen and (max-width: 992px) {
+    .pj_Carousel__img img {
+        height: 700px;
+        object-position: center;
+    }
+    .carousel__text h1{
+        font-size: 50px;
+    }
+    .carousel__text p{
+        font-size: 19px;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .pj_Carousel__img img {
+        height: 650px;
+        object-position: center;
+    }
+    .carousel__text {
+        transform: translateY(-55%);
+    }
+    .carousel__text h1{
+        font-size: 40px;
+    }
+    .carousel__text p{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .pj_Carousel__img img {
+        height: 600px;
+        object-position: center;
+    }
+    .carousel__text h1{
+        font-size: 35px;
+    }
+    .carousel__text p{
+        font-size: 17px;
+    }
 }

@@ -15,25 +15,6 @@ header{
     color: var(--secondary-color);  
 }
 
-/* header sau khi scroll */
-.scrollheader {
-    background-color: white;
-    padding: 0 0;
-}
-.greenactive .pj_header .navbar-nav .nav-link{
-    color: #787592;
-}
-.greenactive .pj_header__nav .nav-item .nav-link#active {
-    color: green;
-}
-.greenactive .navbar-dark .navbar-brand {
-    color: #404040;
-}
-.greenactive #turnLight i{
-    color: #404040;
-}
-
-
 /* navbar */
 
 .pj_header .navbar{
@@ -85,10 +66,7 @@ padding-left: 46px;
 .pj_header__mode i:first-of-type:hover{
     cursor: pointer;
 }
-.pj_header__mode a:focus i:first-child, .pj_header__mode a:focus i:first-child::before{
-    transform: scale(100);
-    color: transparent;
-}
+
 .pj_header__mode a {
     color: white;
     
@@ -149,4 +127,56 @@ header .navbar{
     padding: 0.3rem 0.35rem;
     background-color: #009f4d;
     color: white;
+}
+.navbar-toggler i:first-of-type{
+    display: block;
+}
+.navbar-toggler i:last-of-type{
+    display: none;
+}
+
+/* header sau khi scroll */
+.scrollheader {
+    background-color: white;
+    padding: 0 0;
+}
+.greenactive .pj_header .navbar-nav .nav-link{
+    color: #787592;
+}
+.greenactive .pj_header__nav .nav-item .nav-link#active {
+    color: green;
+}
+.greenactive .navbar-dark .navbar-brand {
+    color: #404040;
+}
+.greenactive #turnLight i{
+    color: #404040;
+}
+/* header sau khi click toggler */
+.bgheader#scrollTop{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.bgheader .navbar-toggler i:first-of-type{
+    display: none;
+}
+.bgheader .navbar-toggler i:last-of-type{
+    display: block;
+}
+.bgheader .pj_header__mode{
+    position: absolute;
+    top: 20px;
+    right: 60px;
+}
+
+/* form sau khi click search */
+
+.active#clickSearch form {
+    display: block;
+}
+.active#clickSearch .icon-close{
+    display: block;
+}
+.active#clickSearch a:first-child i{
+    transform: scale(100);
+    color: transparent;
 }

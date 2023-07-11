@@ -50,9 +50,10 @@
                         <p>Vision to your Future</p>
                     </a>
                 </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCorpVision"
+                <button class="navbar-toggler" id="navToggler" type="button" data-toggle="collapse" data-target="#navbarCorpVision"
                     aria-controls="navbarCorpVision" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars"></i>
+                    <i class="fa icon-close fa-times"></i>
                 </button>
                 <div class="pj_header__nav collapse navbar-collapse" id="navbarCorpVision">
                     <ul class="navbar-nav mr-auto">
@@ -76,18 +77,17 @@
                         </li>
                     </ul>
                     <div class="pj_header__mode">
-                        <div class="pj_header__search">
-                            <a id="clickSearch" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                            <!-- <form id="formm">
+                        <div class="pj_header__search" id="clickSearch">
+                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <form>
                                 <input type="text" placeholder="Start Typing">
                             </form>
-                            <i id="clickClose" class="icon-close fa fa-close material-icons"></i> -->
+                            <i class="icon-close fa fa-close material-icons" id="closeSearch"></i>
                         </div>
                         <div class="turnlight" id="turnLight">
                             <i class="fa-regular fa-moon"></i>
                             <i class="fa-regular fa-sun"></i>
                         </div>
-
                     </div>
                 </div>
             </nav>
@@ -103,7 +103,7 @@
                         <div class="overlay"></div>
                     </div>
                     <div class="carousel__text">
-                        <div class="container-md">
+                        <div class="container">
                             <h1 class="animate__animated animate__flipInX animate__delay-1s">We will solve your issues
                                 our vision to your future</h1>
                             <p class="animate__animated animate__fadeInDown animate__delay-0.5s">Lorem ipsum dolor sit
@@ -122,7 +122,7 @@
 
                     </div>
                     <div class="carousel__text">
-                        <div class="container-md">
+                        <div class="container">
                             <h1 class="animate__animated animate__fadeInDown animate__delay-1s">Embracing success do our
                                 best, need best advice</h1>
                             <p class="animate__animated animate__fadeInDown animate__delay-0.5s">Lorem ipsum dolor sit
@@ -140,7 +140,7 @@
                         <div class="overlay"></div>
                     </div>
                     <div class="carousel__text">
-                        <div class="container-md">
+                        <div class="container">
                             <h1 class="animate__animated animate__fadeInUp animate__delay-1s">Digital transformation
                                 driven by technology</h1>
                             <p class="animate__animated animate__fadeInUp animate__delay-0.5s">Lorem ipsum dolor sit
@@ -158,7 +158,7 @@
                         <div class="overlay"></div>
                     </div>
                     <div class="carousel__text">
-                        <div class="container-md">
+                        <div class="container">
                             <h1 class="animate__animated animate__flipInX animate__delay-1s">For those who believe in
                                 leaving a mark</h1>
                             <p class="animate__animated animate__fadeInDown animate__delay-0.5s">Lorem ipsum dolor sit
@@ -184,8 +184,8 @@
 
         </div>
         <div class="pj_Carousel__wave">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="300px">
-                <path id="wave" fill="#fff" d="M0,50 C350,280 330,200 600,130 S1000,400 2000,30 V300 H0 Z"
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="300px" >
+                <path id="wave" fill="#fff" d="M0,50 C350,280 330,200 600,150 S1000,350 2000,30 V220 H0 Z"
                     width="100%" />
             </svg>
         </div>
@@ -728,7 +728,7 @@
     <script>
         const wave = document.getElementById('wave');
         gsap.to(wave, {
-            attr: { d: "M0,200 C250,100 330,200 800,60 S1000,450 2000,-100 V300 H0 Z" },
+            attr: { d: "M0,200 C250,100 330,200 800,80 S1000,400 2000,-100 V220 H0 Z" },
             duration: 6,
             repeat: -1,
             yoyo: true
@@ -738,7 +738,7 @@
     <!-- speed_carousel -->
     <script>
         $('.carousel').carousel({
-            interval: 4000
+            interval: 400000
         })
     </script>
 
@@ -750,6 +750,9 @@
     
     <!-- Scroll  -->
     <script src="./js/scroll.js"></script>
+
+    <!-- clickToggler -->
+    <script src="./js/clickToggler.js"></script>
     
     <!-- BackToTop  -->
     <script src="./js/backToTop/util.js"></script>
