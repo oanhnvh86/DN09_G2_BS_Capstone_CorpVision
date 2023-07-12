@@ -1,5 +1,5 @@
 /* !HEADER */
-header{
+header {
 
     position: fixed;
     top: 0;
@@ -11,32 +11,33 @@ header{
     background-color: transparent;
     transition: all .3s ease;
 }
+
 .pj_header {
-    color: var(--secondary-color);  
+    color: var(--secondary-color);
 }
 
 /* navbar */
 
-.pj_header .navbar{
+.pj_header .navbar {
     justify-content: space-between;
 }
 
-.pj_header .navbar-brand p:first-of-type{
+.pj_header .navbar-brand p:first-of-type {
     font-size: 30px;
     font-weight: 600;
     text-transform: capitalize;
-    
+
     margin-bottom: 0;
 }
 
-.pj_header .navbar-brand p:last-of-type{
-font-size: 14px;
-font-weight: 600;
-padding-left: 46px;
+.pj_header .navbar-brand p:last-of-type {
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 46px;
 
 }
 
-.pj_header .navbar-brand i{
+.pj_header .navbar-brand i {
     color: var(--primary-color);
 }
 
@@ -44,16 +45,18 @@ padding-left: 46px;
 .pj_header .navbar-nav {
     margin: auto 0 !important;
 }
-.pj_header .navbar-nav .nav-link{
+
+.pj_header .navbar-nav .nav-link {
     color: var(--secondary-color);
     font-size: 15px;
 }
-.pj_header__mode{
+
+.pj_header__mode {
     display: flex;
     align-items: center;
 }
 
-.pj_header .pj_header__mode a:first-child i{
+.pj_header .pj_header__mode a:first-child i {
     padding: 15px;
     border-radius: 50%;
     background-color: var(--primary-color);
@@ -63,26 +66,29 @@ padding-left: 46px;
     margin-right: 30px;
 
 }
-.pj_header__mode i:first-of-type:hover{
+
+.pj_header__mode i:first-of-type:hover {
     cursor: pointer;
 }
 
 .pj_header__mode a {
     color: white;
-    
+
 }
+
 .pj_header__mode .turnlight i {
     font-size: 25px;
     transform: rotate(-20deg);
 }
 
 
-header .navbar{
+header .navbar {
     padding: 0.5rem 0;
     position: relative;
 
 }
-.pj_header__search form{
+
+.pj_header__search form {
     position: absolute;
     left: 0;
     top: 0;
@@ -91,7 +97,7 @@ header .navbar{
     display: none;
 }
 
-.pj_header__search form input{
+.pj_header__search form input {
     height: 100vh;
     width: 100%;
     font-size: 60px;
@@ -100,38 +106,46 @@ header .navbar{
     color: white;
     outline: none;
 }
-.pj_header__search .icon-close{
+
+.pj_header__search .icon-close {
     position: absolute;
-    bottom: -35px;
-    right: 40px;
+    bottom: 16px;
+    right: 55px;
     font-size: 50px;
-    display: none;
+    color: transparent;
 }
-.pj_header__search form input::placeholder{
+
+.pj_header__search form input::placeholder {
     color: white;
 }
-.pj_header__nav ul{
+
+.pj_header__nav ul {
     width: 100%;
     justify-content: center;
 }
-.navbar-expand-lg .navbar-collapse{
+
+.navbar-expand-lg .navbar-collapse {
     justify-content: center;
 }
-.navbar li a{
+
+.navbar li a {
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
 }
-.navbar .navbar-toggler{
+
+.navbar .navbar-toggler {
     font-size: 20px;
     padding: 0.3rem 0.35rem;
     background-color: #009f4d;
     color: white;
 }
-.navbar-toggler i:first-of-type{
+
+.navbar-toggler i:first-of-type {
     display: block;
 }
-.navbar-toggler i:last-of-type{
+
+.navbar-toggler i:last-of-type {
     display: none;
 }
 
@@ -140,29 +154,37 @@ header .navbar{
     background-color: white;
     padding: 0 0;
 }
-.greenactive .pj_header .navbar-nav .nav-link{
+
+.greenactive .pj_header .navbar-nav .nav-link {
     color: #787592;
 }
+
 .greenactive .pj_header__nav .nav-item .nav-link#active {
     color: green;
 }
+
 .greenactive .navbar-dark .navbar-brand {
     color: #404040;
 }
-.greenactive #turnLight i{
+
+.greenactive #turnLight i {
     color: #404040;
 }
+
 /* header sau khi click toggler */
-.bgheader#scrollTop{
+.bgheader#scrollTop {
     background-color: rgba(0, 0, 0, 0.7);
 }
-.bgheader .navbar-toggler i:first-of-type{
+
+.bgheader .navbar-toggler i:first-of-type {
     display: none;
 }
-.bgheader .navbar-toggler i:last-of-type{
+
+.bgheader .navbar-toggler i:last-of-type {
     display: block;
 }
-.bgheader .pj_header__mode{
+
+.bgheader .pj_header__mode {
     position: absolute;
     top: 20px;
     right: 60px;
@@ -170,13 +192,17 @@ header .navbar{
 
 /* form sau khi click search */
 
-.active#clickSearch form {
+.pj_header__search .active#inpClickSearch {
     display: block;
 }
-.active#clickSearch .icon-close{
-    display: block;
+
+.pj_header__search .active#clickSearch {
+    color: white;
+    bottom: -35px;
+    right: 40px;
 }
-.active#clickSearch a:first-child i{
+
+.pj_header .pj_header__mode a:first-child .active {
     transform: scale(100);
     color: transparent;
 }
