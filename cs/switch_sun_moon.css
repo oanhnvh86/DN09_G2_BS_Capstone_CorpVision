@@ -12,7 +12,7 @@
 
 /* !bật đèn -- MOON  */
 
-#bodyDark.dark {
+.dark#bodyDark {
     background-color: var(--bg-TurnOnMoon-1); /*#151421;*/
 }
 .dark .turnlight .fa-moon {
@@ -38,7 +38,7 @@
 }
 
 .dark .pj_title h2
-,.dark .pj_AboutUs li
+,.dark .pj_AboutUs li a
 {
     color: var(--secondary-color);
 }
@@ -59,10 +59,10 @@
     background-color: #151421;
 } 
 
-.dark .pj_Service .card-body .card-title {
+.dark .pj_Service .card-body a.card-title {
     background-color: var(--bg-TurnOnMoon-2);
 }
-.dark .pj_Service .card-body .card-title a 
+.dark .pj_Service .card-body a.card-title 
 ,.dark .pj_Service .card-body a 
 {
     color: white;
@@ -103,6 +103,10 @@
     border-radius: 50%;
 }
 
-.dark .pj_News .card__bottom span:nth-of-type(2){
+.dark .pj_News .card__bottom .w3link a{
     color: white
+}
+
+.dark .pj_News .card__bottom .w3link a:hover{
+    color: var(--primary-color);
 }

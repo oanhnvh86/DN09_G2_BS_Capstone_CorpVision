@@ -7,9 +7,10 @@ header {
     z-index: 20;
     width: 100%;
     border-bottom: 1px solid rgba(231, 231, 231, 0.18);
-    padding: 10px 0;
+    /* padding: 10px 0; */
     background-color: transparent;
     transition: all .3s ease;
+    
 }
 
 .pj_header {
@@ -18,8 +19,14 @@ header {
 
 /* navbar */
 
+<<<<<<< HEAD
 .pj_header .navbar {
     justify-content: space-between;
+=======
+.pj_header .navbar{
+    /* justify-content: space-between; */
+    align-items: center;
+>>>>>>> 513d9cb11648e3099f9cc57cc4144f6ba8770dfa
 }
 
 .pj_header .navbar-brand p:first-of-type {

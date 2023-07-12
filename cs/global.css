@@ -13,13 +13,15 @@
     --bg-lightgrey: #f8f9fa;
     --bg-TurnOnMoon-1: #151421;
     --bg-TurnOnMoon-2: #100f19;
-  }
+    
+    --fc-section:#7e7d7d;
+    --fc-title: #3f3a64;
+    --fc-primary: #666;
+    --bg-button: #00a63f;
+    --bg-button_hover: #008030;
+    --c-white:#fff;
 
-/* [data-theme="dark"] {
-    --primary-color: #009f4d;
-    --secondary-color: #213364;
-    --font-color: #c2c2c2;
-} */
+  }
 
 *{
     margin: 0;
@@ -30,7 +32,7 @@ html, body{
     font-family: 'Jost', sans-serif;
     font-size: 17px;
     line-height: 27px;
-    color: var(--font-color);
+    color: var(--fc-primary);
 }
 
 .pj_Section{
@@ -43,25 +45,28 @@ html, body{
     text-transform: uppercase;
     line-height: 30px;
     letter-spacing: 1px;
-    color: #7e7d7d;
-    letter-spacing: 1px;
+    color: var(--fc-section) ;/* #7e7d7d;*/
+    margin-bottom: 0;
 }
 
 .pj_title h2 {
     font-size: 35px;
-    line-height: 45px;
     font-weight: 700;
-    color: var(--heading-color);
+    line-height: 45px;
+    color: var(--fc-title);
 }
 
 .button{
-    background-color: #29a75b;
+    background-color: var(--bg-button);
     padding: 15px 50px;
+    
     font-size: 16px;
-    line-height: 18px;
     font-weight: 600;
-    border-radius: 10px;
+    line-height: 18px;
+    
+    border-radius: 8px;
     border: none;
-    color: white;
-    user-select: none;
+    color: var(--c-white);
+    /* user-select: none; */
+    cursor: pointer;
 }

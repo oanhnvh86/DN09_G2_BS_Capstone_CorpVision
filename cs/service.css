@@ -8,61 +8,77 @@
 }
 
 .pj_Service .card img{
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .pj_Service .card-body{
     /* position: relative; */
 }
 
-.pj_Service .card-body .card-title{
+.pj_Service .card-body a.card-title{
     /* position: absolute;
     top: -10%;
     left: 50%; */
     transform: translateY(-45px);
+    display: inline-block;
+    padding: 12px 35px;
 
     border-radius: 5px;
     background-color: white;
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
 
-    padding: 12px 35px;
-
     text-align: center;
+    font-size: 19px;
+    line-height: 28px;
+    font-weight: 600;
 
-    display: inline-block;
+    text-decoration: none;
+    color: var(--heading-color);
 
     transition: all .5s;
 }
 
-.pj_Service .card-body .card-title a{
-    font-size: 19px;
-    line-height: 28px;
-    font-weight: 600;
-    color: var(--heading-color);
+.pj_Service .card:hover a.card-title{
+    color: var(--primary-color);
 }
 
-.pj_Service .card-body .card-title:hover{
+.pj_Service .card:hover img{
     cursor: pointer;
 }
 
-.pj_Service .card-body .card-title:hover a{
+.pj_Service .card-body a.card-title:hover{
+    cursor: pointer;
     color: var(--primary-color);
 }
+
+.pj_Service .card-body a.card-title:focus{
+    outline: thin dotted;
+}
+
 
 .pj_Service .card-body .card-text{
     margin-top: -40px;
 }
 
-.pj_Service .card-body a{
+.pj_Service a.linklearnmore{
+    padding: 10px 30px;
     color: var(--heading-color);
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
     transition: all .5s;
+    
 }
 
-.pj_Service .card-body a:hover{
+.pj_Service a.linklearnmore:hover{
+    cursor: pointer;
     color: var(--primary-color);
+}
+.pj_Service  a.linklearnmore:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 166, 63, 0.25);
+    border-radius: 8px;
+
 }

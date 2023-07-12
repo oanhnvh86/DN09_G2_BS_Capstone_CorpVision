@@ -12,6 +12,8 @@ background-color: #151421;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+
+    /* overflow: hidden; */
 }
 
 .footer__top h1{
@@ -39,7 +41,7 @@ footer form {
 footer form span{
     /* display: flex;
     align-items: center; */
-    padding: 14px;
+    padding: 17px;
 
     border: 1px solid #ced4da;
     border-radius: 5px;
@@ -79,13 +81,29 @@ footer form button.btn-primary{
     border: transparent;
 } 
 
+footer form button.btn-primary:hover{
+    
+    background-color: var(--bg-button_hover) ;
+    border-color: #00732c;
+
+}
+
 .footer__info {
-    color: #97a1a9;
     font-size: 18px;
     line-height: 28px;
     color: #97a1a9;
     border-top: 1px solid rgba(249, 249, 249, 0.1);
 
+}
+
+.footer__info a{
+    text-decoration: none;
+    color: #97a1a9;
+    transition: all, .5s;
+}
+
+.footer__info a:hover{
+    color: #fff;
 }
 
 .footer__info h6 {
@@ -122,6 +140,12 @@ footer form button.btn-primary{
 .footer__info .navbar-brand p{
     color: white;
 }
+
+.footer__icon{
+    font-size: 16px;
+    color: #404040;
+}
+
 .footer__icon a {
     margin-right: 15px;
 }
@@ -161,4 +185,16 @@ footer form button.btn-primary{
 
 .footer__bottom span:hover a{
     color: #fff;
+}
+
+
+@media screen and (max-width:450px) {
+    footer form {
+        max-width: 400px;
+        margin: auto;
+    }
+
+    footer form button.btn {
+        padding: 0 15px;
+    }
 }
