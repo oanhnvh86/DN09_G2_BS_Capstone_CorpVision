@@ -73,11 +73,10 @@
 }
 
 .pj_Carousel__bgimg{
-    /* background-image: url(../img/b1.jpg); */
     height: 800px;
     width: 100%;
     background-repeat: no-repeat;
-    background-size: 120%;
+    background-size: 130%;
     background-position: top;
 }
 /* responsive */
@@ -85,7 +84,6 @@
     .pj_Carousel__bgimg{
         height: 700px;
         background-size: 160%;
-        /* background-position: center; */
     }
 
     .carousel__text h1 {
