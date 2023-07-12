@@ -35,6 +35,9 @@
 
 /* FOOTER */
 @import url(./footer.css);
+
+/* BACKTOTOP */
+@import url(./backtotop.css); 
 :root {
     --primary-color: #009f4d;
     --secondary-color: #fff;
@@ -155,8 +158,6 @@ body{
     box-shadow: none;
 }
 
-/* BACKTOTOP */
-@import url(./backtotop.css); 
 
 
 
