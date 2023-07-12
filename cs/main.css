@@ -139,7 +139,21 @@ body{
 .dark .card{
     background-color: #151421;
 }
-
+.dark .overlay {
+    background-color: rgba(29, 42, 55, 0.8);
+}
+.dark .pj_Carousel__next{
+    background-color: #100f19;
+    border: 0.5px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    box-shadow: none;
+}
+.dark .pj_Carousel__back{
+    background-color:#100f19;
+    border: 0.5px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    box-shadow: none;
+}
 
 /* BACKTOTOP */
 @import url(./backtotop.css); 
