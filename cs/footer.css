@@ -41,7 +41,7 @@ footer form {
 footer form span{
     /* display: flex;
     align-items: center; */
-    padding: 14px;
+    padding: 17px;
 
     border: 1px solid #ced4da;
     border-radius: 5px;
@@ -80,6 +80,13 @@ footer form button.btn-primary{
     background-color: var(--primary-color);
     border: transparent;
 } 
+
+footer form button.btn-primary:hover{
+    
+    background-color: var(--bg-button_hover) ;
+    border-color: #00732c;
+
+}
 
 .footer__info {
     font-size: 18px;
