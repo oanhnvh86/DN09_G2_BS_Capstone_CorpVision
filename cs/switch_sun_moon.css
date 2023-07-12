@@ -38,7 +38,7 @@
 }
 
 .dark .pj_title h2
-,.dark .pj_AboutUs li
+,.dark .pj_AboutUs li a
 {
     color: var(--secondary-color);
 }

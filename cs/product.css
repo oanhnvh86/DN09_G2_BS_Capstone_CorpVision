@@ -56,6 +56,10 @@
 .pj_Product__border a:hover{
     color: var(--primary-color);}
 
+.pj_Product__border a:focus{
+    outline: thin dotted;
+}
+
 @media screen and (max-width:450px) {
     /* .pj_Product .product__right .col-6{
         padding: 15px 10px 15px 0;
@@ -68,6 +72,7 @@
     .pj_Product__border img{
         width: 45px;
         /* height: 100%; */
+        height: auto;
     }
     .pj_Product__border a{
         font-size: 18px;
